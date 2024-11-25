@@ -1,0 +1,254 @@
+section {
+  background-color: #f7ecde;
+}
+section h1 {
+  color: #352e28;
+  font-family: "Pacifico", cursive;
+  text-align: center;
+  position: relative;
+  padding-block: 20px;
+  font-weight: 500;
+  font-size: 50px;
+  z-index: 3;
+  margin-top: 25px;
+}
+section h1::before {
+  content: "";
+  position: absolute;
+  width: 24.5%;
+  height: 15%;
+  background-color: #fec260;
+  left: 50%;
+  bottom: 25px;
+  transition: height 0.5s ease-in-out;
+  -webkit-transition: height 0.5s ease-in-out;
+  -moz-transition: height 0.5s ease-in-out;
+  -ms-transition: height 0.5s ease-in-out;
+  -o-transition: height 0.5s ease-in-out;
+  z-index: -1;
+  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
+}
+section h1:hover::before {
+  height: 35%;
+}
+.bookmark-content {
+  width: 100%;
+  margin-top: 40px;
+  margin-bottom: 10px;
+  border-width: 2px 0;
+  border-style: dotted;
+  border-color: #352e28;
+  padding-block: 35px;
+}
+.bookmark-content h2 i {
+  font-weight: 900;
+  font-family: "Font Awesome 6 Free";
+}
+.book-inner {
+  margin-bottom: 40px;
+}
+.bookmark-content h2 {
+  font-family: "Righteous", cursive;
+  font-size: 25px;
+  font-weight: 500;
+  background-image: linear-gradient(to right, #3ca55c, #b5ac49);
+  line-height: 1.2;
+  margin-top: -15px;
+  text-align: center;
+  padding-inline: 50px;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
+  background-clip: text;
+  color: rgba(0 0 0 / 6%);
+}
+.bookmark-content h2 .mark1 {
+  color: #3ca55c;
+}
+.bookmark-content h2 .mark2 {
+  color: #b5ac49;
+}
+.bookmark-content .book label {
+  color: #212529;
+  font-size: 16px;
+  font-weight: 600;
+  font-family: "PT Sans Caption", sans-serif;
+}
+.bookmark-content .book label i {
+  padding-right: 5px;
+  color: #212529;
+  font-size: 16px;
+}
+.bookmark-content .book input {
+  width: 100%;
+  display: block;
+  padding: 0.375rem 0.75rem;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #212529;
+  background-color: #fff;
+  border: 1px solid #ced4da;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  transition: border 0.5s ease-in-out, box-shadow 0.5s ease-in-out;
+  -webkit-transition: border 0.5s ease-in-out, box-shadow 0.5s ease-in-out;
+  -moz-transition: border 0.5s ease-in-out, box-shadow 0.5s ease-in-out;
+  -ms-transition: border 0.5s ease-in-out, box-shadow 0.5s ease-in-out;
+  -o-transition: border 0.5s ease-in-out, box-shadow 0.5s ease-in-out;
+}
+.bookmark-content .book input:focus {
+  outline: none;
+  border: 1px solid #d99c39;
+  box-shadow: 0 0 0 0.25rem #fec26055;
+}
+.bookmark-box .site-submit {
+  background-color: #d1512d;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 400;
+  font-family: "PT Sans Caption", sans-serif;
+  transform: translateY(10px);
+  transition: background-color 0.5s ease-in-out, color 0.5s ease-in-out;
+  -webkit-transition: background-color 0.5s ease-in-out, color 0.5s ease-in-out;
+  -moz-transition: background-color 0.5s ease-in-out, color 0.5s ease-in-out;
+  -ms-transition: background-color 0.5s ease-in-out, color 0.5s ease-in-out;
+  -o-transition: background-color 0.5s ease-in-out, color 0.5s ease-in-out;
+  -webkit-transform: translateY(10px);
+  -moz-transform: translateY(10px);
+  -ms-transform: translateY(10px);
+  -o-transform: translateY(10px);
+}
+.bookmark-box .site-submit:hover {
+  background-color: #bb4120;
+  color: #fff;
+}
+
+table thead tr th {
+  padding: 50px 50px;
+  background-color: transparent;
+  border-bottom-width: 1px;
+  box-shadow: inset 0 0 0 9999px transparent;
+}
+table tbody tr td {
+  padding: 50px 50px;
+  background-color: transparent;
+  border-bottom-width: 1px;
+  box-shadow: inset 0 0 0 9999px transparent;
+}
+table tbody .site-visit {
+  font-size: 16px;
+  font-weight: 400;
+  font-family: "PT Sans Caption", sans-serif;
+  color: #fff;
+  background-color: #9eb23b;
+  padding-block: 5px;
+  padding-inline: 10px;
+  transition: background-color 0.5s ease-in-out, color 0.5s ease-in-out,
+    border-color 0.5s ease-in-out;
+  -webkit-transition: background-color 0.5s ease-in-out, color 0.5s ease-in-out,
+    border-color 0.5s ease-in-out;
+  -moz-transition: background-color 0.5s ease-in-out, color 0.5s ease-in-out,
+    border-color 0.5s ease-in-out;
+  -ms-transition: background-color 0.5s ease-in-out, color 0.5s ease-in-out,
+    border-color 0.5s ease-in-out;
+  -o-transition: background-color 0.5s ease-in-out, color 0.5s ease-in-out,
+    border-color 0.5s ease-in-out;
+  border: 1px solid #9eb23b;
+}
+table tbody .site-visit:hover {
+  background-color: #8a9e23;
+  color: #fff;
+  border-color: #6e8018;
+}
+table tbody .site-delete {
+  font-size: 16px;
+  font-weight: 400;
+  font-family: "PT Sans Caption", sans-serif;
+  background-color: #eb1d36;
+  color: #fff;
+   transition: background-color 0.5s ease-in-out, color 0.5s ease-in-out,
+    border-color 0.5s ease-in-out;
+  -webkit-transition: background-color 0.5s ease-in-out, color 0.5s ease-in-out,
+    border-color 0.5s ease-in-out;
+  -moz-transition: background-color 0.5s ease-in-out, color 0.5s ease-in-out,
+    border-color 0.5s ease-in-out;
+  -ms-transition: background-color 0.5s ease-in-out, color 0.5s ease-in-out,
+    border-color 0.5s ease-in-out;
+  -o-transition: background-color 0.5s ease-in-out, color 0.5s ease-in-out,
+    border-color 0.5s ease-in-out;
+  border: 1px solid #eb1d36;
+}
+table tbody .site-delete:hover {
+  background-color: #d30820;
+  color: #fff;
+  border-color: #ba081d;
+}
+
+/***style of message***/
+.box {
+  background-color: #0007;
+  position: absolute;
+  height:100%;
+  width: 100%;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  z-index: 1000;
+}
+.message {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  background-color: #fff;
+}
+
+.inner {
+  width: 500px;
+  z-index: 10;
+  margin: auto;
+}
+.points .span1,
+.points .span2,
+.points .span3 {
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  
+}
+.points .span1 {
+      background-color: #f15f5d;
+}
+.points .span2 {
+      background-color: #febe2e;
+}
+.points .span3 {
+      background-color: #4db748;
+}
+
+/***style of message***/
+

@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fourth Assignment of js</title>
+    <!-- ========== Start site image ========== -->
+    <link rel="icon" href="./images/bookmark.png">
+    <!-- ========== End site image ========== -->
+
+    <!-- ========== Start google fonts ========== -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=PT+Sans+Caption:wght@400;700&family=Pacifico&family=Righteous&display=swap"
+        rel="stylesheet" />
+    <!-- ========== End google fonts ========== -->
+
+    <!-- ========== Start fontAwesome library ========== -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" />
+
+    <!-- ========== End fontAwesome library ========== -->
+
+    <!-- ========== Start bootstrap css ========== -->
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+    <!-- ========== End bootstrap css ========== -->
+
+    <!-- ========== Start style css ========== -->
+    <link rel="stylesheet" href="./css/style.css" />
+    <!-- ========== End style css ========== -->
+
+
+</head>
+
+<body>
+
+    <section >
+        <div class="container d-flex justify-content-center align-items-center min-vh-100">
+            <div class="bookmark-box w-100">
+                <h1>Bookmarker</h1>
+                <div class="bookmark-content">
+                    <div class="book-inner">
+                        <h2>
+                            <i class="fa-solid fa-bookmark mark1"></i>
+                            Bookmark your favorite sites
+                            <i class="fa-solid fa-bookmark mark2"></i>
+                        </h2>
+                    </div>
+                    <div class="mb-5 book">
+                        <label for="book-name" class="form-label mb-2 fw-semibold">
+                            <i class="fa-solid fa-book-bookmark"></i>
+                            Site Name
+                        </label>
+                        <input oninput="validationName()" id="book-name" type="text" placeholder="Bookmark Name" />
+                    </div>
+                    <div class="book">
+                        <label for="book-url" class="form-label mb-2 fw-semibold">
+                            <i class="fa-solid fa-link"></i>
+                            Site URL
+                        </label>
+                        <input oninput="validationUrl()" id="book-url" type="url" placeholder="Website URL" />
+                    </div>
+                    <button onclick="addData()" type="submit"
+                        class=" btn site-submit   d-block m-auto mt-4  px-5">Submit</button>
+                </div>
+                <table class="table bg-light py-4 mt-4 text-center">
+                    <thead>
+                        <tr>
+                            <th>Index</th>
+                            <th>Website Name</th>
+                            <th>Visit</th>
+                            <th>Delete</th>
+
+                        </tr>
+                    </thead>
+                    <tbody id="tbody">
+
+                    </tbody>
+                </table>
+            </div>
+            
+        </div>
+          
+        <div class="box d-none" id="box">
+            <div class="message d-none" id="message">
+                <div class="inner bg-white p-4 rounded-2 shadow-lg">
+                    <header class="inner-header w-100 d-flex justify-content-between align-items-center mb-4">
+                        <div class="points d-flex">
+                            <span class="rounded-circle me-2 span1"></span>
+                            <span class="rounded-circle me-2 span2"></span>
+                            <span class="rounded-circle me-2 span3"></span>
+                        </div>
+                        <button class="btn border-0" id="closeBtn">
+                            <i class="fa-solid fa-xmark close fs-3"></i>
+                        </button>
+                    </header>
+                    <p class="m-0 pb-3 fw-bolder fs-5 text-start">
+                        Site Name or Url is not valid, Please follow the rules below :
+                    </p>
+                    <ol class="arrows list-unstyled">
+                        <li class="text-start pb-2">
+                            <i class="fa-regular fa-circle-right p-2" style="color: #bb4120;"></i>Site name must
+                            contain at least 3 characters
+                        </li>
+                        <li class="text-start">
+                            <i class="fa-regular fa-circle-right p-2" style="color: #bb4120;"></i>Site URL must be a
+                            valid one
+                        </li>
+                    </ol>
+                </div>
+        
+            </div>
+        </div>
+    </section>
+    
+
+
+
+
+
+
+
+
+
+    <!-- ========== Start bootstrap js ========== -->
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <!-- ========== End bootstrap js ========== -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <!-- ========== Start main js ========== -->
+    <script src="./js/main.js"></script>
+    <!-- ========== End main js ========== -->
+
+</body>
+
+</html>
