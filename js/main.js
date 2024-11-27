@@ -113,7 +113,6 @@ function validationUrl() {
     }
 }
 
-function closeMessage() {
-    message.classList.add("d-none");
-}
-closeBtn.addEventListener("click", closeMessage);
+closeBtn.addEventListener("click", function () {
+    box.classList.add("d-none");
+});

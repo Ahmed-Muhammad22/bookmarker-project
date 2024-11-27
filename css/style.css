@@ -199,7 +199,7 @@ table tbody .site-delete:hover {
 /***style of message***/
 .box {
   background-color: #0007;
-  position: absolute;
+  position: fixed;
   height:100%;
   width: 100%;
   left: 50%;
