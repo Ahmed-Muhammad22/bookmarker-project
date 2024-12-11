@@ -34,7 +34,8 @@
 </head>
 
 <body>
-    <section >
+
+    <section>
         <div class="container d-flex justify-content-center align-items-center min-vh-100">
             <div class="bookmark-box w-100">
                 <h1>Bookmarker</h1>
@@ -47,18 +48,22 @@
                         </h2>
                     </div>
                     <div class="mb-5 book">
-                        <label for="book-name" class="form-label mb-2 fw-semibold">
+                        <label for="siteName" class="form-label mb-2 fw-semibold">
                             <i class="fa-solid fa-book-bookmark"></i>
                             Site Name
                         </label>
-                        <input oninput="validationName()" id="book-name" type="text" placeholder="Bookmark Name" />
+                        <input class="form-control" oninput="allValidation(this, 'msgName')" id="siteName" type="text" placeholder="Bookmark Name" />
+                        
+                        <p id="msgName" class="alert alert-danger p-2 d-none">Website name is invalid</p>
                     </div>
                     <div class="book">
-                        <label for="book-url" class="form-label mb-2 fw-semibold">
+                        <label for="siteUrl" class="form-label mb-2 fw-semibold">
                             <i class="fa-solid fa-link"></i>
                             Site URL
                         </label>
-                        <input oninput="validationUrl()" id="book-url" type="url" placeholder="Website URL" />
+                        <input class="form-control" oninput="allValidation(this, 'msgUrl')" id="siteUrl" type="url" placeholder="Website URL" />
+                        
+                        <p id="msgUrl" class="alert alert-danger p-2 d-none">Website url is invalid</p>
                     </div>
                     <button onclick="addData()" type="submit"
                         class=" btn site-submit   d-block m-auto mt-4  px-5">Submit</button>
@@ -78,42 +83,42 @@
                     </tbody>
                 </table>
             </div>
-            
+
         </div>
-          
-        
     </section>
-    
-     <div class="box d-none" id="box">
-            <div class="message d-none" id="message">
-                <div class="inner bg-white p-4 rounded-2 shadow-lg">
-                    <header class="inner-header w-100 d-flex justify-content-between align-items-center mb-4">
-                        <div class="points d-flex">
-                            <span class="rounded-circle me-2 span1"></span>
-                            <span class="rounded-circle me-2 span2"></span>
-                            <span class="rounded-circle me-2 span3"></span>
-                        </div>
-                        <button class="btn border-0" id="closeBtn">
-                            <i class="fa-solid fa-xmark close fs-3"></i>
-                        </button>
-                    </header>
-                    <p class="m-0 pb-3 fw-bolder fs-5 text-start">
-                        Site Name or Url is not valid, Please follow the rules below :
-                    </p>
-                    <ol class="arrows list-unstyled">
-                        <li class="text-start pb-2">
-                            <i class="fa-regular fa-circle-right p-2" style="color: #bb4120;"></i>Site name must
-                            contain at least 3 characters
-                        </li>
-                        <li class="text-start">
-                            <i class="fa-regular fa-circle-right p-2" style="color: #bb4120;"></i>Site URL must be a
-                            valid one
-                        </li>
-                    </ol>
-                </div>
-        
+
+    <div class="box d-none" id="box">
+        <div class="message d-none" id="message">
+            <div class="inner bg-white p-4 rounded-2 shadow-lg">
+                <header class="inner-header w-100 d-flex justify-content-between align-items-center mb-4">
+                    <div class="points d-flex">
+                        <span class="rounded-circle me-2 span1"></span>
+                        <span class="rounded-circle me-2 span2"></span>
+                        <span class="rounded-circle me-2 span3"></span>
+                    </div>
+                    <button class="btn border-0" id="closeBtn">
+                        <i class="fa-solid fa-xmark close fs-3"></i>
+                    </button>
+                </header>
+                <p class="m-0 pb-3 fw-bolder fs-5 text-start">
+                    Site Name or Url is not valid, Please follow the rules below :
+                </p>
+                <ol class="arrows list-unstyled">
+                    <li class="text-start pb-2">
+                        <i class="fa-regular fa-circle-right p-2" style="color: #bb4120;"></i>Site name must
+                        contain at least 3 characters
+                    </li>
+                    <li class="text-start">
+                        <i class="fa-regular fa-circle-right p-2" style="color: #bb4120;"></i>Site URL must be a
+                        valid one
+                    </li>
+                </ol>
             </div>
+
         </div>
+    </div>
+
+
 
 
 
@@ -125,7 +130,7 @@
     <!-- ========== Start bootstrap js ========== -->
     <script src="./js/bootstrap.bundle.min.js"></script>
     <!-- ========== End bootstrap js ========== -->
-     
+
     <!-- ========== Start main js ========== -->
     <script src="./js/main.js"></script>
     <!-- ========== End main js ========== -->
